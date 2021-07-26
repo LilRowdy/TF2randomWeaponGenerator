@@ -60,18 +60,18 @@ def wepStats():
     randStat = randStat.split(" ")
     
     statOverType = randStat[-1]
+    randStat.pop()
+
     statOverType = list(statOverType)
-    print(statOverType)
     
-    statTier = statOverType[0]
-    statWepType = statOverType[1]
     if len(statOverType) == 2:
         statTier = statOverType[0]
         statWepType = statOverType[1]
     elif len(statOverType) == 3:
         statTier = statOverType[:2]
         statWepType = statOverType[2]
-
-    print(statTier)
-    print(statWepType)
-wepStats()
+    
+    randStatStr = str
+    for i in randStat:
+        randStatStr = ("{} ".format(i))
+    
